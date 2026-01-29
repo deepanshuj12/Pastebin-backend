@@ -6,7 +6,6 @@ dotenv.config();
 
 let conn = null;
 
-
 export default async function handler(req, res) {
   if (!conn) {
     try {
