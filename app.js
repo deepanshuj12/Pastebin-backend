@@ -7,7 +7,7 @@ import pastes from "./routes/pastes.js";
 const app = express();
 
 app.use(cors({
-  origin: process.env.PUBLIC_BASE_URL // e.g. https://pastebin-frontend-henna.vercel.app
+  origin: process.env.PUBLIC_BASE_URL
 }));
 
 app.use(express.json());
