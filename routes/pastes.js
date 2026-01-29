@@ -34,6 +34,7 @@ router.post("/", async (req, res) => {
   res.status(201).json({
     id: paste._id.toString(),
     url: `${process.env.PUBLIC_BASE_URL}/p/${paste._id}`
+
   });
 });
 
