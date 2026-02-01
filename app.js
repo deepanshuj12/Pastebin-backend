@@ -1,7 +1,7 @@
-import express from "express";
+limport express from "express";
 import mongoose from "mongoose";
 import cors from "cors"; 
-import db from "./routes/db.js";
+import healthz from "./routes/healthz.js";
 import pastes from "./routes/pastes.js";
 
 const app = express();
@@ -12,7 +12,7 @@ app.use(cors({
 
 app.use(express.json());
 
-app.use("/api/db", db);
+app.use("/api/healthz", healthz);
 app.use("/api/pastes", pastes);
 
 export default app;
